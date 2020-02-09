@@ -34,51 +34,28 @@ class ContactViewController:OCKListViewController{
     func queryForNewData(_ sender: UISegmentedControl) {
         
         self.clearAndKeepSegment()
+        var query = OCKContactQuery()
         
         switch sender.selectedSegmentIndex {
         case 0:
-            let query = OCKContactQuery()
-            
-            storeManager.store.fetchAnyContacts(query: query, callbackQueue: .main) { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    print(error)
-                case .success(let contacts):
-                    self.allContacts = contacts
-                    self.displayContacts(self.allContacts)
-                }
-            }
+            print("Get all contacts...")
         case 1:
-            var query = OCKContactQuery()
             query.tags = [doctorTag]
-            
-            storeManager.store.fetchAnyContacts(query: query, callbackQueue: .main) { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    print(error)
-                case .success(let contacts):
-                    self.allContacts = contacts
-                    self.displayContacts(self.allContacts)
-                }
-            }
-        
+    
         default:
-            var query = OCKContactQuery()
             query.ids = ["jane"]
             
-            storeManager.store.fetchAnyContacts(query: query, callbackQueue: .main) { [weak self] result in
-                guard let self = self else { return }
-                switch result {
-                case .failure(let error):
-                    print(error)
-                case .success(let contacts):
-                    self.allContacts = contacts
-                    self.displayContacts(self.allContacts)
-                }
+        }
+        
+        storeManager.store.fetchAnyContacts(query: query, callbackQueue: .main) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let contacts):
+                self.allContacts = contacts
+                self.displayContacts(self.allContacts)
             }
-            
         }
     }
     
