@@ -33,7 +33,7 @@ import Contacts
 import UIKit
 
 let doctorTag = "Doctor"
-
+let patientId = "jacksonId"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -60,6 +60,10 @@ private extension OCKStore {
     // Adds tasks and contacts into the store
     func populateSampleData() {
 
+        let newPatient = OCKPatient(id: patientId, givenName: "Jackson", familyName: "John")
+        addPatients([newPatient])
+        
+        
         let thisMorning = Calendar.current.startOfDay(for: Date())
         let aFewDaysAgo = Calendar.current.date(byAdding: .day, value: -4, to: thisMorning)!
         let beforeBreakfast = Calendar.current.date(byAdding: .hour, value: 8, to: aFewDaysAgo)!

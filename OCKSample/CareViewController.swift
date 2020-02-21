@@ -42,8 +42,8 @@ class CareViewController: OCKDailyPageViewController {
     }
 
     @objc private func presentContactsListViewController() {
-        let viewController = ContactViewController() //OCKContactsListViewController(storeManager: storeManager)
-        viewController.title = "Care Team"
+        let viewController = PatientViewController()//ContactViewController() //OCKContactsListViewController(storeManager: storeManager)
+        viewController.title = "Patients"
         viewController.isModalInPresentation = true
         viewController.navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Done", style: .plain, target: self,

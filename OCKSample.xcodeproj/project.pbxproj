@@ -12,6 +12,7 @@
 		03FEBEC7237A0D6100ACB35E /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 03FEBEC5237A0D6100ACB35E /* Localizable.stringsdict */; };
 		91510E6523F07A3A00D49819 /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91510E6423F07A3A00D49819 /* CareKit */; };
 		91510E6723F07CD700D49819 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91510E6623F07CD700D49819 /* ContactViewController.swift */; };
+		916DFB15240068F900CFE690 /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DFB14240068F900CFE690 /* PatientViewController.swift */; };
 		E72B2C0A226939E3009A9438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B2C09226939E3009A9438 /* AppDelegate.swift */; };
 		E72B2C14226939E4009A9438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72B2C12226939E4009A9438 /* LaunchScreen.storyboard */; };
 		E7440E4F229477F7007AD30A /* CareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7440E4E229477F7007AD30A /* CareViewController.swift */; };
@@ -26,6 +27,7 @@
 		03FEBEC5237A0D6100ACB35E /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		1409475222B025AD005C1D16 /* CareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91510E6623F07CD700D49819 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		916DFB14240068F900CFE690 /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
 		E72B2C06226939E3009A9438 /* OCKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72B2C09226939E3009A9438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E72B2C13226939E4009A9438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				03F060092331946600CCE09B /* SceneDelegate.swift */,
 				E7440E4E229477F7007AD30A /* CareViewController.swift */,
 				91510E6623F07CD700D49819 /* ContactViewController.swift */,
+				916DFB14240068F900CFE690 /* PatientViewController.swift */,
 				E7C37848228F887800E982D8 /* TipView.swift */,
 				71A79C8A2294FBA1002B96D3 /* Supporting Files */,
 			);
@@ -204,6 +207,7 @@
 			files = (
 				E7440E4F229477F7007AD30A /* CareViewController.swift in Sources */,
 				E72B2C0A226939E3009A9438 /* AppDelegate.swift in Sources */,
+				916DFB15240068F900CFE690 /* PatientViewController.swift in Sources */,
 				E7C37849228F887800E982D8 /* TipView.swift in Sources */,
 				03F0600A2331946600CCE09B /* SceneDelegate.swift in Sources */,
 				91510E6723F07CD700D49819 /* ContactViewController.swift in Sources */,
